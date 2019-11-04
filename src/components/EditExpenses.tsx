@@ -1,6 +1,5 @@
 import * as React from 'react';
 
 export const EditExpensePage = props => {
-  console.log(props);
-  return <div>This is from add expense edit</div>;
+  return <div>Edit expense of id: {props.match.params.id}</div>;
 };
