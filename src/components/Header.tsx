@@ -7,13 +7,10 @@ export const Header = () => (
     <NavLink to="/" exact={true} activeClassName="is-active">
       Dashboard
     </NavLink>
-    <NavLink to="/Create" activeClassName="is-active">
+    <NavLink to="/create" activeClassName="is-active">
       Create
     </NavLink>
-    <NavLink to="/Edit" activeClassName="is-active">
-      Edit
-    </NavLink>
-    <NavLink to="/Help" activeClassName="is-active">
+    <NavLink to="/help" activeClassName="is-active">
       Help
     </NavLink>
   </header>

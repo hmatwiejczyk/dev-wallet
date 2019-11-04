@@ -1,3 +1,6 @@
 import * as React from 'react';
 
-export const EditExpensePage = () => <div>This is from add expense edit</div>;
+export const EditExpensePage = props => {
+  console.log(props);
+  return <div>This is from add expense edit</div>;
+};
