@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/App.tsx',
+  entry: './src/redux.tsx',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
