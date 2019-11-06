@@ -1,3 +1,8 @@
 import * as React from 'react';
+import ExpensesList from './ExpensesList';
 
-export const Dashboard = () => <div>This is from dashboard component</div>;
+export const Dashboard = () => (
+  <div>
+    <ExpensesList />
+  </div>
+);
