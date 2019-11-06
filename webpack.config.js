@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/redux.tsx',
+  entry: './src/App.tsx',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -35,6 +35,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     port: '4200',
-    historyApiFallback: true
+    historyApiFallback: true,
+    open: false
   }
 };
