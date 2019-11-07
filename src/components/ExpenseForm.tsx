@@ -4,18 +4,31 @@ import { SingleDatePicker } from 'react-dates';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 
-class ExpenseForm extends React.Component<{ onSubmit }, {}> {
-  state = {
-    description: '',
-    amount: '',
-    note: '',
-    createdAt: moment(),
-    calendarFocused: false,
-    errors: {
-      descriptionError: '',
-      amountError: ''
-    }
-  };
+class ExpenseForm extends React.Component<
+  { onSubmit?; expense? },
+  {
+    description: string;
+    amount: string;
+    note: string;
+    createdAt: any;
+    calendarFocused: boolean;
+    errors: { descriptionError; amountError };
+  }
+> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      description: props.expense ? props.expense.description : '',
+      amount: props.expense ? props.expense.amount.toString() : '',
+      note: props.expense ? props.expense.note : '',
+      createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
+      calendarFocused: false,
+      errors: {
+        descriptionError: '',
+        amountError: ''
+      }
+    };
+  }
   onDescriptionChange = e => {
     const description = e.target.value;
     this.setState(() => ({ description }));
@@ -49,7 +62,9 @@ class ExpenseForm extends React.Component<{ onSubmit }, {}> {
       }
       this.setState(() => ({ errors: { descriptionError, amountError } }));
     } else {
-      this.setState(() => ({ errors: {} }));
+      this.setState(() => ({
+        errors: { amountError: '', descriptionError: '' }
+      }));
       this.props.onSubmit({
         description: this.state.description,
         amount: parseFloat(this.state.amount),
