@@ -4,7 +4,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Dashboard } from '../components/Dashboard';
 import AddExpensePage from '../components/AddExpenses';
-import { EditExpensePage } from '../components/EditExpenses';
+import EditExpensePage from '../components/EditExpenses';
 import { HelpPage } from '../components/HelpPage';
 import { NotFoundPage } from '../components/NotFoundPage';
 
