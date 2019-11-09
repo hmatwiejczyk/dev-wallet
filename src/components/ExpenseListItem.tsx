@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { removeExpense } from '../actions/expenses';
 import { Link, withRouter } from 'react-router-dom';
 
-const ExpenseListItem = withRouter((props: any) => (
+export const ExpenseListItem = (props: any) => (
   <div>
     <Link to={`/edit/${props.id}`}>
       <h4>Description: {props.description}</h4>
@@ -19,6 +19,6 @@ const ExpenseListItem = withRouter((props: any) => (
       </button>
     </small>
   </div>
-));
+);
 
-export default connect()(ExpenseListItem);
+export default connect()(withRouter(ExpenseListItem));
