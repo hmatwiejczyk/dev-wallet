@@ -6,7 +6,7 @@ export const mockExpenses = [
     description: 'test 1',
     note: 'test 1',
     amount: 1000,
-    createdAt: 0
+    createdAt: 333
   },
   {
     id: 2,

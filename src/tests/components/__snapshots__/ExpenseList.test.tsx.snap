@@ -4,7 +4,7 @@ exports[`should render ExpenseList with expenses 1`] = `
 <div>
   <Connect(withRouter())
     amount={1000}
-    createdAt={0}
+    createdAt={333}
     description="test 1"
     id={1}
     key="1"
