@@ -2,11 +2,11 @@ import * as React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { Dashboard } from '../components/Dashboard';
+import  Dashboard  from '../components/Dashboard';
 import AddExpensePage from '../components/AddExpenses';
 import EditExpensePage from '../components/EditExpenses';
-import { HelpPage } from '../components/HelpPage';
-import { NotFoundPage } from '../components/NotFoundPage';
+import  HelpPage  from '../components/HelpPage';
+import  NotFoundPage  from '../components/NotFoundPage';
 
 export const AppRouter = () => (
   <BrowserRouter>

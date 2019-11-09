@@ -6,3 +6,5 @@ export const NotFoundPage = () => (
     404 <Link to="/">Go Home</Link>>
   </div>
 );
+
+export default NotFoundPage;
