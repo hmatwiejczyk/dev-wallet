@@ -10,7 +10,6 @@ import {
 import { DateRangePicker } from 'react-dates';
 interface IFilterProps {
   filters;
-  dispatch;
   setTextFilter?;
   setStartDate?;
   setEndDate?;
