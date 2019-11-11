@@ -1,3 +1,6 @@
 node_modules
-dist
-src/red.tsx
+dist/bundle.js
+dist/bundle.js.map
+dist/bundle.js.LICENSE
+dist/main.css
+dist/main.css.map
