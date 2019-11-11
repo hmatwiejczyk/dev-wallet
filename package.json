@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/hmatwiejczyk/dev-wallet#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "moment": "^2.24.0",
     "react": "^16.11.0",
     "react-dates": "^21.3.2",
