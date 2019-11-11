@@ -14,7 +14,7 @@ exports[`should render ExpenseListItem 1`] = `
     Amount: 
     1000
      | Created: 
-    333
+    01/01/1970
     <br />
     <button
       onClick={[Function]}
