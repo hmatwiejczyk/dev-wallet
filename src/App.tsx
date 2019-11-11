@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import { AppRouter } from './routes/AppRouter';
 import configureStore from './store/configureStore';
 
+import '../src/firebase/firebase';
+
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 import 'react-dates/initialize';
